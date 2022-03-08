@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;700&display=swap');
 
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Urbanist', sans-serif;
 }
 
 body {
     width: 100%;
     background-color: #030812;
-
 }
 
 .navbar {
@@ -27,16 +27,19 @@ body {
     padding: 0px 20%;
 }
 
+.how-works {
+    width: 100%;
+    height: 600px;
+    background-color: orange;
+    padding: 0px 20%;
+}
+
 /* --- NAVBAR --- */
 .navbar-left, .navbar-right {
     height: 100%;
     width: 50%;
     display: flex;
     align-items: center;
-}
-
-.navbar-left {
-    /* background-color: red; */
 }
 
 .navbar-right {
@@ -50,13 +53,12 @@ body {
     width: 64px;
     height: 64px;
     /* background-color: aqua; */
-    background-image: url(/assets/Logo.png);
+    background-image: url(/assets/Logo.svg);
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .logo-text {
-    font-family: 'Urbanist', sans-serif;
     font-weight: bold;
     font-style: normal;
     font-size: 32px;
@@ -69,12 +71,12 @@ input {
     height: 48px;
     padding: 17px;
     border-radius: 8px;
-    opacity: 0.4;
+    /* opacity: 0.4; */
     color: #FFFFFF;
     width: 50%;
     background-color: #3c485d;
     border: none;
-
+    font-weight: bold;
 }
 input:active {
     border: 1px solid #3c485d;
@@ -84,15 +86,14 @@ input:active {
 .menu {
     list-style: none;
     flex-grow: 1;
-    display: flex;
     flex-direction: row;
-
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }
 
 .menu > li {
-    display: inline-block;
-    margin-right: 2%;
-    font-family: 'Urbanist', sans-serif;
+    margin-right: 6%;
     font-size: 16px;
     font-weight: bold;
     font-style: normal;
@@ -105,8 +106,109 @@ input:active {
     border-radius: 12px;
     background: linear-gradient(207.67deg, #FDAE8F 3.43%, #FD1C68 104.7%);
     border: none;
-    font-family: 'Urbanist', sans-serif;
     color: #FFFFFF;
     font-size: 16px;
     cursor: pointer;
+}
+
+/* --- HERO --- */
+
+/* --- HOW IT WORKS --- */
+.how-it-works {
+    width: 100%;
+    height: 380px;
+    padding: 0px 20%;
+    margin-top: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.how-it-works > h1 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-bottom: 5%;
+    color: #FFFFFF;
+}
+
+.icon-boxes {
+    width: 100%;
+    justify-content: space-between;
+    color: #FFFFFF;
+    display: flex;
+}
+
+.icon {
+    width: 24%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon > h1, .icon > p {
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.icon > h1 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+.icon > p {
+    font-size: 16px;
+    font-weight: 100;
+}
+
+.icon-button {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-img {
+    width: 40px;
+    height: 40px;
+}
+
+.gradient-1 {
+    background: linear-gradient(207.67deg, #23D3A4 3.43%, #5B49CF 104.7%);
+    border-radius: 800px;
+}
+
+.gradient-2 {
+    background: linear-gradient(63.88deg, #739EEC 29.38%, #FF8C9F 86.63%);
+    border-radius: 800px;
+}
+
+.gradient-3 {
+    background: linear-gradient(66.27deg, #FE6F2D -10.45%, #FDCE38 76.78%);
+    border-radius: 800px;
+}
+
+.gradient-4 {
+    background: linear-gradient(133.48deg, #2EA3F2 -3.48%, #A651FB 130.9%);
+    border-radius: 800px;
+}
+
+.wallet {
+    background-image: url(/assets/Wallet.svg);
+}
+
+.collection {
+    background-image: url(/assets/SquaresFour.svg);
+}
+
+.image {
+    background-image: url(/assets/Image.svg);
+}
+
+.store {
+    background-image: url(/assets/Storefront.svg);
 }
