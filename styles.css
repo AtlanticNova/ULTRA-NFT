@@ -109,6 +109,7 @@ input:active {
     color: #FFFFFF;
     font-size: 16px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 /* --- HERO --- */
@@ -180,21 +181,25 @@ input:active {
 .gradient-1 {
     background: linear-gradient(207.67deg, #23D3A4 3.43%, #5B49CF 104.7%);
     border-radius: 800px;
+    cursor: pointer;
 }
 
 .gradient-2 {
     background: linear-gradient(63.88deg, #739EEC 29.38%, #FF8C9F 86.63%);
     border-radius: 800px;
+    cursor: pointer;
 }
 
 .gradient-3 {
     background: linear-gradient(66.27deg, #FE6F2D -10.45%, #FDCE38 76.78%);
     border-radius: 800px;
+    cursor: pointer;
 }
 
 .gradient-4 {
     background: linear-gradient(133.48deg, #2EA3F2 -3.48%, #A651FB 130.9%);
     border-radius: 800px;
+    cursor: pointer;
 }
 
 .wallet {
@@ -248,7 +253,3 @@ input:active {
     cursor: pointer;
 }
 
-
-.row {
-    margin: 0;
-}
