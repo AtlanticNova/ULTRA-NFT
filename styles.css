@@ -212,3 +212,43 @@ input:active {
 .store {
     background-image: url(/assets/Storefront.svg);
 }
+
+/* --- Live Auctions --- */
+.live-auctions {
+    width: 100%;
+    height: 910px;
+    padding: 0px 20%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 160px;
+}
+
+.header {
+    display: flex;
+}
+
+.header > h1{
+    color: #FFFFFF;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: bold;
+    width: 100%;
+}
+
+.explore-button {
+    padding: 21px 56px;
+    height: 72px;
+    width: 20%;
+    border-radius: 16px;
+    background: linear-gradient(207.67deg, #FDAE8F 3.43%, #FD1C68 104.7%);
+    font-size: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+
+.row {
+    margin: 0;
+}
